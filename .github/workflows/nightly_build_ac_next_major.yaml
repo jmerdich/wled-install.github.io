@@ -77,6 +77,7 @@ jobs:
         npm install
         pio run -e esp32dev || pio run -e esp32dev || true
         pio run -e nodemcuv2 || pio run -e nodemcuv2 || true
+        pio run -e esp8266_2m  || pio run -e esp8266_2m || true
         pio run -e esp32_eth || pio run -e esp32_eth || true
         pio run -e esp32dev_are || pio run -e esp32dev_are || true
         pio run -e esp32_are_eth || pio run -e esp32_are_eth || true
