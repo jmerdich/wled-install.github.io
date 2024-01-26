@@ -8,7 +8,7 @@ manifest_dir = "manifest_dir"
 output_bin_dir=os.path.join(output_dir,bin_dir)
 output_suppl_dir=os.path.join(output_dir,suppl_dir)
 output_manifest_dir=os.path.join(output_dir,manifest_dir)
-site_root=os.environ.get("SITE_ROOT", "/") # If you get manifest errors in a fork, you probably want to set this var to '/wled-install.github.io/' in the settings.
+site_root="/wled-install.github.io/" # for custom domains, set to "/"
 
 def isbinfile_esp32(filename):
     if ("ESP32" in filename) or ("esp32" in filename):
