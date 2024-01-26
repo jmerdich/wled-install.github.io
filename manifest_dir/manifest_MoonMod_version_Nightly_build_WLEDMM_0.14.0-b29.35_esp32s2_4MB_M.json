@@ -9,7 +9,7 @@
         { "path": "/suppl_dir/bootloader_esp32s2.bin", "offset": 4096 },
         { "path": "/suppl_dir/partitions_v2022.bin", "offset": 32768 },
         { "path": "/suppl_dir/boot_app0_v2022.bin", "offset": 57344 },
-        { "path": "/bin_dir/3_MoonMod_version/Nightly_build/WLEDMM_0.14.0-b29.35_esp32s2_4MB_M.bin", "offset": 65536 }
+        { "path": "/wled-install.github.io/bin_dir/3_MoonMod_version/Nightly_build/WLEDMM_0.14.0-b29.35_esp32s2_4MB_M.bin", "offset": 65536 }
       ]
     }
   ]

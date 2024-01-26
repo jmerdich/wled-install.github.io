@@ -9,7 +9,7 @@
         { "path": "/suppl_dir/bootloader_dout_40m_v2022.bin", "offset": 4096 },
         { "path": "/suppl_dir/partitions_v2022.bin", "offset": 32768 },
         { "path": "/suppl_dir/boot_app0_v2022.bin", "offset": 57344 },
-        { "path": "/bin_dir/1_Standard_version/Nightly_build/WLED_0.14.1_ESP32_Ethernet.bin", "offset": 65536 }
+        { "path": "/wled-install.github.io/bin_dir/1_Standard_version/Nightly_build/WLED_0.14.1_ESP32_Ethernet.bin", "offset": 65536 }
       ]
     }
   ]
