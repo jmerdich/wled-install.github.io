@@ -8,6 +8,7 @@ manifest_dir = "manifest_dir"
 output_bin_dir=os.path.join(output_dir,bin_dir)
 output_suppl_dir=os.path.join(output_dir,suppl_dir)
 output_manifest_dir=os.path.join(output_dir,manifest_dir)
+site_root=os.environ.get("SITE_ROOT", "/") # If you get manifest errors in a fork, you probably want to set this var to '/wled-install.github.io/' in the settings.
 
 def isbinfile_esp32(filename):
     if ("ESP32" in filename) or ("esp32" in filename):
@@ -68,7 +69,7 @@ def proceed_dir(dir_path, dir_text, dir_path_forhtml):
         if bin_file[-4:]==".bin":
             # create manifest file
             manifest_filename="manifest_"+''.join(e for e in dir_text.replace(" ","_").replace(".","_") if (e.isalnum() or e=="_"))+"_"+bin_file[:-4]+".json"           
-            manifest_path_forhtml="/"+manifest_dir+"/"+manifest_filename
+            manifest_path_forhtml=site_root+manifest_dir+"/"+manifest_filename
             download_path_forhtml=dir_path_forhtml+"/"+bin_file
             manifest_path=os.path.join(output_manifest_dir,manifest_filename)
             f_manifest=open(manifest_path,"w+")
@@ -246,7 +247,7 @@ for dir1 in dirs1:
             dir2_path=os.path.join(dir1_path,dir2)
             if os.path.isdir(dir2_path):
                 dir2_text=dir1_text + ": " + dir2.replace("_"," ")
-                html_list = html_list + proceed_dir(dir2_path, dir2_text, "/"+bin_dir+"/"+dir1+"/"+dir2)
+                html_list = html_list + proceed_dir(dir2_path, dir2_text, site_root+bin_dir+"/"+dir1+"/"+dir2)
                 
 f_template=open("./scripts/index_template.html", "r")
 template=string.Template(f_template.read())
