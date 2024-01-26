@@ -73,6 +73,7 @@ jobs:
         echo 'build_flags = -D WLED_RELEASE_NAME=ESP32S3_16MB ${env:esp32s3dev_8MB.build_flags}' >> platformio.ini
         pio run -e esp32dev || pio run -e esp32dev || true
         pio run -e nodemcuv2 || pio run -e nodemcuv2 || true
+        pio run -e esp8266_2m  || pio run -e esp8266_2m || true
         pio run -e esp32_eth || pio run -e esp32_eth || true
         pio run -e esp32dev_are || pio run -e esp32dev_are || true
         pio run -e esp32_are_eth || pio run -e esp32_are_eth || true
