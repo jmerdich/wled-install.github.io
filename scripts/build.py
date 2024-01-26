@@ -112,7 +112,7 @@ def proceed_dir(dir_path, dir_text, dir_path_forhtml):
                     AddInfoShort=", 1MB";
                 if ("_2MB" in bin_file) or ("_ESP02" in bin_file):
                     AddInfo=", 2MB Flash";
-                    AddInfoShort=", 1MB";
+                    AddInfoShort=", 2MB";
             
             if ("WLEDSR_" in bin_file[0:7]):
                 if (("_S." in bin_file) or ("_S_" in bin_file)):
