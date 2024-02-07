@@ -1,0 +1,13 @@
+{
+  "name": "WLED (ESP8266, 4MB)",
+  "version": "Standard version: Nightly build next major",
+  "new_install_skip_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP8266",
+      "parts": [
+        { "path": "/wled-install.github.io/bin_dir/1_Standard_version/Nightly_build_next_major/WLED_0.15.0-b1_ESP8266.bin", "offset": 0 }
+      ]
+    }
+  ]
+}
